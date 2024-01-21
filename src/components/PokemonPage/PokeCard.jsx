@@ -1,19 +1,51 @@
 import { useEffect } from "react"
 import useFecth from "../../hooks/useFecth"
+import { useNavigate } from "react-router-dom"
 
 const PokeCard = ({ url }) => {
 
-    const [ pokemon, getPokemon ] = useFecth(url)
+    const [pokemon, getPokemon] = useFecth(url)
 
     useEffect(() => {
         getPokemon()
     }, [])
 
-    console.log(pokemon)
+    const navigate = useNavigate()
 
-  return (
-    <div>PokeCard</div>
-  )
+    const handleNavigatePokemon = () => {
+        navigate(`/pokedex/${pokemon.id}`)
+    }
+
+    return (
+        <div onClick={handleNavigatePokemon}>
+            <article>
+                <header>
+                    <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+                </header>
+                <section>
+                    <h3>{pokemon?.name}</h3>
+                    <ul>
+                        {
+                            pokemon?.types.map(typeInfo => (
+                                <li key={typeInfo.type.url}>{typeInfo.type.name}</li>
+                            ))
+                        }
+                    </ul>
+                    <hr />
+                    <ul>
+                        {
+                            pokemon?.stats.map(statInfo => (
+                                <li key={statInfo.stat.url}>
+                                    <span>{statInfo.stat.name}</span>
+                                    <span>{statInfo.base_stat}</span>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </section>
+            </article>
+        </div>
+    )
 }
 
 export default PokeCard
