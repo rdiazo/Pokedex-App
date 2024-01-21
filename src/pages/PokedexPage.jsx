@@ -7,15 +7,21 @@ import SelectType from "../components/PokedexPage/SelectType"
 const PokedexPage = () => {
 
   const [inputValue, setInputValue] = useState('')
+  const [typeSelected, setTypeSelected] = useState('allPokemons')
 
   const trainerName = useSelector(states => states.trainer)
 
   const url = 'https://pokeapi.co/api/v2/pokemon?limit=20&offset=0'
-  const [ pokemons, getPokemons ] = useFecth(url)
+  const [ pokemons, getPokemons, getTypePokemon ] = useFecth(url)
 
   useEffect(() => {
+    if(typeSelected === 'allPokemons') {
+      getPokemons()
+    } else {
+      getTypePokemon(typeSelected)
+    }
     getPokemons()
-  }, [])
+  }, [typeSelected])
 
   const inputName = useRef()
 
@@ -24,16 +30,15 @@ const PokedexPage = () => {
     setInputValue(inputName.current.value.trim().toLowerCase())
   }
 
-  console.log(pokemons)
-
   const cdFilter = (pokeInfo) => pokeInfo.name.toLowerCase().includes(inputValue)
 
   return (
     <div>
       <h2>Hi <span>{trainerName}</span>, here you can find your favorite pokemon</h2>
       <form onSubmit={handleSearch}>
-        <SelectType />
+        
         <input ref={inputName} type="text" />
+        <SelectType setTypeSelected={setTypeSelected}/>
         <button>Search</button>
       </form>
       <div>
