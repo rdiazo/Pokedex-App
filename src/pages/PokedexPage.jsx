@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import { useSelector } from "react-redux"
 import useFecth from "../hooks/useFecth"
-import PokeCard from "../components/PokemonPage/PokeCard"
+import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 
 const PokedexPage = () => {
@@ -33,7 +33,7 @@ const PokedexPage = () => {
   const cdFilter = (pokeInfo) => pokeInfo.name.toLowerCase().includes(inputValue)
 
   return (
-    <div>
+    <div className="pokedexpage">
       <h2>Hi <span>{trainerName}</span>, here you can find your favorite pokemon</h2>
       <form onSubmit={handleSearch}>
         
