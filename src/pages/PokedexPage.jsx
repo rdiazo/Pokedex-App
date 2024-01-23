@@ -3,6 +3,7 @@ import { useSelector } from "react-redux"
 import useFecth from "../hooks/useFecth"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
+import './styles/PokedexPage.css'
 
 const PokedexPage = () => {
 
@@ -34,14 +35,14 @@ const PokedexPage = () => {
 
   return (
     <div className="pokedexpage">
-      <h2>Hi <span>{trainerName}</span>, here you can find your favorite pokemon</h2>
-      <form onSubmit={handleSearch}>
+      <h2 className="pokedexpage__title">Hi <span>{trainerName}</span>, here you can find your favorite pokemon</h2>
+      <form className="pokedexpage__form" onSubmit={handleSearch}>
         
         <input ref={inputName} type="text" />
         <SelectType setTypeSelected={setTypeSelected}/>
         <button>Search</button>
       </form>
-      <div>
+      <div className="prueba">
         {
           pokemons?.results.filter(cdFilter).map(pokeInfo => (
             <PokeCard

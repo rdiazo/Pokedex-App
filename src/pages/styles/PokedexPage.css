@@ -1,0 +1,19 @@
+.pokedexpage {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    margin-top: 5em;
+}
+.pokedexpage__title {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+}
+.pokedexpage__form {
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+}
+
+.prueba {
+    display: flex;
+    flex-flow: row wrap;
+}

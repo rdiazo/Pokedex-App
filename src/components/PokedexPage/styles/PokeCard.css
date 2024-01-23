@@ -110,6 +110,7 @@
     --header-gradient: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
     --border-gradient: linear-gradient(180.57deg, #0B0E0D -45.23%, #4F4F4F 158.14%);    
 }
+
 .pokecard__border {
     padding: 0.7em;
     background-color: #ccc;
@@ -117,6 +118,7 @@
     width: 100%;
     max-width: 340px;
     background: var(--border-gradient);
+    margin: 10px;
 }
 .pokecard {
     background-color: white;
@@ -184,3 +186,4 @@
 .pokemon__stats__value {
     color: var(--color);
 }
+
