@@ -1,19 +1,63 @@
 .pokedexpage {
     display: grid;
-    justify-items: center;
     grid-template-columns: repeat(auto-fill, 1fr);
-    margin-top: 5em;
+    margin: 0.8em;
+    background-color: whitesmoke;
+}
+.pokedexpage__img__container {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    position: relative;
+}/*
+.pokedexpage__img {
+   position: relative;
+}*/
+.pokedexpage__img__name {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-75%);
 }
 .pokedexpage__title {
     grid-column: 1 / 5;
-    grid-row: 1 / 2;
+    grid-row: 2 / 3;
+    margin-left: 20%;
+    margin-bottom: 1em;
+    transform: translate(-15%);
+    font-size: 1.8em;
 }
 .pokedexpage__form {
     grid-column: 1 / 5;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
+   /* display: flex;
+    flex-flow: row wrap;*/
+}
+.pokedexpage__span__trainer{
+    color: red;
 }
 
-.prueba {
+.pokedexpage__input {
+   /* margin-left: 15%;
+    margin-bottom: 1em;
+    transform: translate(-25%);*/
+    font-size: 1.4em;
+    border: none;
+    height: 50px;
+    width: 100%;
+    max-width: 400px;    
+}
+.pokedexpage__button {
+    font-size: 1.4em;
+    border: none;
+    height: 50px;
+    width: 100%;
+    max-width: 180px; 
+    background-color: red;
+    color: whitesmoke;  
+}
+.pokedex__card {
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }

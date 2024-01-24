@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import useFetch from "../../hooks/useFecth"
+import './styles/SelectType.css'
 
 const SelectType = ({ setTypeSelected }) => {
 
@@ -17,11 +18,11 @@ const SelectType = ({ setTypeSelected }) => {
     }
 
   return (
-    <select ref={typeRef} onChange={handleChange}>
-        <option value={'allPojemons'}>All Pokemons</option>
+    <select className="selecttype__option" ref={typeRef} onChange={handleChange}>
+        <option  value={'allPojemons'}>All Pokemons</option>
         {
             types?.results.map(type => (
-                <option key={type.url} value={type.url}>{type.name}</option>
+                <option  key={type.url} value={type.url}>{type.name}</option>
             ))
         }
     </select>
