@@ -1,8 +1,13 @@
 .selecttype__option {
-    position: relative;
-    background-color: pink;
+
+    margin-left: 20%;
+    background-color: white;
     color: red;
     height: 50px;
+    width: 250px;
     border: none;
-    
 }
+::-webkit-scrollbar {
+    display: none;
+}
+

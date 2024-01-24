@@ -3,17 +3,14 @@
     background-color: whitesmoke;
     position: relative;
 }
-
 .homepage__img__container {
     display: flex;
-
     justify-content: center;
     height: 80%;
     max-height: 300px;
     position: relative;
     overflow: hidden;
 }
-
 .homepage__img__header {
     max-width: 500px;
     max-height: 320px;

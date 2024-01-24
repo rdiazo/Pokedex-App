@@ -1,0 +1,317 @@
+.grass {
+    --color: #416460;
+    --header-gradient: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    --border-gradient: linear-gradient(179.27deg, #B1DBBC -20.76%, #C3DEA3 157.95%);
+  }
+  .fire {
+    --color: #E75C35;
+    --header-gradient: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+    --border-gradient: linear-gradient(180.57deg, #E6901E -45.23%, #E75C35 158.14%);
+  }
+  .water {
+    --color: #1479FB;
+    --header-gradient: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+    --border-gradient: linear-gradient(180.57deg, #83B9FF -45.23%, #1479FB 158.14%);
+  }
+  .bug {
+    --color: #4AB648;
+    --header-gradient: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+    --border-gradient: linear-gradient(180.57deg, #4AB648 -45.23%, #C3DEA3 158.14%);
+  }
+  .normal{
+    --color:#735259;
+    --header-gradient:linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+    --border-gradient:linear-gradient(180.57deg, #735259 -45.23%, #BA707F 158.14%);
+    
+    
+  }
+  .fighting{
+    --color:#96402A;    ;
+    --header-gradient: linear-gradient(176.83deg, #96402A -8.78%, #F1613C 169.09%, #CB735D 242.33%);
+    --border-gradient: linear-gradient(180.57deg, #96402A -45.23%, #E95B36 158.14%);
+    
+    
+  }
+  .poison{
+    --color: #5B3184;
+    --header-gradient: linear-gradient(177.03deg, #5B3184 -11.97%, #A564E3 71.28%, #CE9BFF 135.64%);
+    --border-gradient: linear-gradient(180.57deg, #5B3184 -45.23%, #C48EF9 158.14%);
+    
+    
+  }
+  .ground{
+    --color:#654008;
+    --header-gradient: linear-gradient(179.75deg, #654008 -19.96%, #895C1A 43.67%, #D69638 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #654008 -45.23%, #9C6614 158.14%);
+    
+    
+  }
+  .rock{
+    --color:#7E7E7E;
+    --header-gradient: linear-gradient(177.03deg, #7E7E7E -11.97%, #8D8D94 57.49%, #D3D3D3 135.64%);
+    --border-gradient: linear-gradient(180.57deg, #7E7E7E -45.23%, #B9B9BA 158.14%);
+  
+  }
+ .ghost{
+    --color:#323569;
+    --header-gradient: linear-gradient(177.03deg, #323569 -11.97%, #454AA8 57.49%, #787DDA 135.64%);
+    --border-gradient: linear-gradient(180.57deg, #323569 -45.23%, #5A61DD 158.14%);
+ }
+ 
+ .dark{
+    --color:#030706;
+    --header-gradient: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+    --border-gradient: linear-gradient(180.57deg, #0B0E0D -45.23%, #4F4F4F 158.14%);   
+ }
+ 
+ .steel{
+    --color: #5E736C;
+    --header-gradient: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #5E736C -45.23%, #9BB7AD 158.14%);
+ }
+.psychic{
+    --color: #5E736C;
+    --header-gradient: linear-gradient(179.75deg, #5E736C -19.96%, #728881 43.67%, #A8A8A8 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #5E736C -45.23%, #9BB7AD 158.14%);
+ }
+ .electric{
+    --color: #0C1395;
+    --header-gradient: linear-gradient(179.75deg, #0C1395 -19.96%, #2B319B 43.67%, #7075D9 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #0C1395 -45.23%, #8E94FE 158.14%);
+    
+ }
+ .ice{
+    --color: #6FBEDF;
+    --header-gradient: linear-gradient(177.03deg, #6FBEDF -11.97%, #64CBF5 47.77%, #BDEBFE 136.72%);
+    --border-gradient: linear-gradient(180.57deg, #6FBEDF -45.23%, #C4EBFB 158.14%);
+ }
+ .dragon{
+    --color: #478A93;
+    --header-gradient: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #478A93 -45.23%, #8DD6E0 158.14%);
+}
+.fairy{
+    --color: #971B45;
+    --header-gradient: linear-gradient(179.75deg, #971B45 -19.96%, #C23867 43.67%, #CD7D98 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #971B45 -45.23%, #C5597E 158.14%);
+}
+.flying{
+    --color: #478A93;
+    --header-gradient: linear-gradient(179.75deg, #478A93 -19.96%, #56A4AE 43.67%, #A2BEC1 138.4%);
+    --border-gradient: linear-gradient(180.57deg, #478A93 -45.23%, #8DD6E0 158.14%);
+}
+.unknown{
+    --color:#735259;
+    --header-gradient:linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+    --border-gradient:linear-gradient(180.57deg, #735259 -45.23%, #BA707F 158.14%);
+}
+.shadow{
+    --color:#030706;
+    --header-gradient: linear-gradient(177.03deg, #030706 -11.97%, #0D1211 57.49%, #5A5E5D 135.64%);
+    --border-gradient: linear-gradient(180.57deg, #0B0E0D -45.23%, #4F4F4F 158.14%);    
+}
+
+.pokemon__img__container {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    max-height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.pokemon__img__name {
+    max-width: 500px;
+    max-height: 320px;
+    position: absolute;
+    top: 7%;
+    left: 25%;
+    transform: translate(-50%);
+}
+.pokemon__box__back{
+     text-align: left;
+     padding-left: 2em;
+ }
+.pokemon__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px 5px 5px;   
+}
+.pokemen__card__card{
+    width: 100%;
+    max-width: 50em;
+    border-radius: 0.7em;
+    border: 0.7em solid #ccc;
+    margin-top: 12em;
+    display: grid;
+    place-self: center; 
+}
+.pokemon__header__img{
+    background-color: #999;
+    aspect-ratio: 3.1;
+    position: relative;
+}
+.pokemon__img__pokemon {
+    position: absolute;
+    width: 60%;
+    bottom: 0.1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pokemon__section{
+    padding-top:2.5em;
+}
+.pokemon__item{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.pokemon__order{
+    border: none;  
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+    width: 3em;
+    height: 2em;
+}
+.pokemon__name__title{
+    font-size: 2.5em;
+    text-transform: capitalize;
+    text-align: center;
+}
+.pokemon__section__dimensions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  place-self: center;
+  width: 100%;
+  column-gap: 2em;
+  margin-top: 1em;
+}
+.pokemon__height{
+    text-align:right;
+}
+.pokemon__item__height{
+    text-align: right;
+    padding-right: 1em;
+}
+.pokemon__weight{
+    display: grid;
+    text-align: left;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.pokemon__item__weight{
+    text-align: left;
+    padding-left: 0.7em;
+}
+.pokemon__container__skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+}
+.pokemon__skills{
+    text-align: center;
+}
+.pokemon__item__skills {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-row: 2/3;
+    display: flex;
+    column-gap: 2em;
+}
+.pokemon__type{
+    text-align: center;
+}
+.pokemon__item__type{
+    display: grid;
+    grid-column: 2/3;
+    display: flex;
+    column-gap: 2em;
+    justify-content: center;  
+}
+.pokemon__box__li{
+    border: none;
+    width: 6em;
+    text-transform: capitalize;
+    height: 2em;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background-color: whitesmoke;
+    border-radius: 0.7em;
+}
+.pokemon__item__stat{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3.2em;
+    font-size: 25px;
+}
+.pokemon__item__stats li{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+.pokemon__item__hp{
+    padding-left: 5em;
+}
+.pokemon__item__style{
+    padding-left: 5em;
+}
+.pokemon__style1{
+    width: 80%;
+    height: 1.7em;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(233, 230, 230);
+    margin-bottom: 1em;
+   
+}
+.pokemon__style1::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: var(--w);    
+    background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+}
+.pokemon__section__second{
+    display: grid;
+    place-content: center;   
+}
+.card__item__movements{
+    margin-top: 5em;
+    width: 50em;
+    border-radius: 0.7em;
+    border: 0.7em solid #ccc;   
+}
+.pokemon__item__title{
+    margin-top: 1em;
+}
+.card__item__movements{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 3em;
+    gap: 1em;
+    text-align: center;
+    padding-left: 2em;
+    padding-bottom: 1em;
+    place-self: center;
+    
+}
+.pokemon__group{
+    border-radius: 1em ;
+    width: 7em;
+    height: 3em;
+    background-color: rgb(219, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+.style__por{
+    padding-left: 1em;
+
+}
