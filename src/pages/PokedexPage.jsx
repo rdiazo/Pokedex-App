@@ -37,8 +37,8 @@ const PokedexPage = () => {
 
     <div className="pokedexpage">
       <div className="pokedexpage__img__container">
-        <img className="pokedexpage__img" src="./public/headerPoke.svg" alt="" />
-        <img className="pokedexpage__img__name" src="./public/pokedex.svg" alt="" />
+        <img className="pokedexpage__img" src="../src/img/headerPoke.png" alt="" />
+        <img className="pokedexpage__img__name" src="../src/img/pokedex.png" alt="" />
       </div>
       <h2 className="pokedexpage__title"><span className="pokedexpage__span__trainer">Hi {trainerName}</span>, here you can find your favorite pokemon</h2>
       <form className="pokedexpage__form" onSubmit={handleSearch}>

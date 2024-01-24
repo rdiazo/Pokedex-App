@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage__img__container">
-        <img className="homepage__img__header" src="./public/pokedex.svg" alt="" />
+        <img className="homepage__img__header" src="../src/img/pokedex.png" alt="" />
       </div>
       <h2 className="homepage__title">Hi Trainer!</h2>
       <p className="homepage__subtitle">to start this app, give me your trainer name</p>
@@ -29,7 +29,7 @@ const HomePage = () => {
         <input className="homepage__input" ref={inputTrainer} type="text" placeholder="Your name" />
         <button className="homepage__button">Catch them all</button>
       </form>
-      <img className="homepage__img__footer" src="./public/homeFooter.svg" alt="" />
+      <img className="homepage__img__footer" src="../src/img/homeFooter.png" alt="" />
     </div>
   )
 }
