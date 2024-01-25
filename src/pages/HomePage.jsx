@@ -21,15 +21,15 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage__img__container">
-        <img className="homepage__img__header" src="./src/img/charman.png" alt="" />
+        <img className="homepage__img__header" src="/pokedex.png" alt="" />
       </div>
-      <h2 className="homepage__title">Hi Trainer!!</h2>
+      <h2 className="homepage__title">Hi Trainer!</h2>
       <p className="homepage__subtitle">to start this app, give me your trainer name</p>
       <form className="homepage__form" onSubmit={handleSubmit}>
         <input className="homepage__input" ref={inputTrainer} type="text" placeholder="Your name" />
         <button className="homepage__button">Catch them all</button>
       </form>
-      <img className="homepage__img__footer" src="/src/img/homeFooter.png" alt="" />
+      <img className="homepage__img__footer" src="/homeFooter.png" alt="" />
     </div>
   )
 }
