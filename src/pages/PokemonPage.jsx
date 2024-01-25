@@ -14,11 +14,9 @@ const PokemonPage = () => {
     getPokemon()
   }, [])
 
-  console.log(pokemon)
-
-  return (
+   return (
     <div>
-      <img className="pokemon__img__container" src="src\img\headerPoke.png" alt="" />
+      <img className="pokemon__img__container" src="\headerPoke.png" alt="" />
       <img className="pokemon__img__name" src="src\img\pokedex.png" alt="" />
       <div className='pokemon__box__back'>
         <a href='/#/pokedex' class="btn">Back</a>

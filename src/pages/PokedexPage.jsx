@@ -4,6 +4,7 @@ import useFecth from "../hooks/useFecth"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 import './styles/PokedexPage.css'
+import { CounterPage } from "../components/PokedexPage/CounterPage"
 
 const PokedexPage = () => {
 
@@ -12,8 +13,9 @@ const PokedexPage = () => {
 
   const trainerName = useSelector(states => states.trainer)
 
-  const url = 'https://pokeapi.co/api/v2/pokemon?limit=30&offset=0'
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=${15}&offset=${1}`
   const [pokemons, getPokemons, getTypePokemon] = useFecth(url)
+  
 
   useEffect(() => {
     if (typeSelected === 'allPokemons') {
@@ -57,6 +59,7 @@ const PokedexPage = () => {
           ))
         }
       </div>
+      <CounterPage />
     </div>
   )
 }
