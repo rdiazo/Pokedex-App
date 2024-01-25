@@ -21,7 +21,7 @@ const HomePage = () => {
   return (
     <div className="homepage">
       <div className="homepage__img__container">
-        <img className="homepage__img__header" src="./src/img/charman.png" alt="" />
+        <img className="homepage__img__header" src="/src/img/charman.png" alt="" />
       </div>
       <h2 className="homepage__title">Hi Trainer!!</h2>
       <p className="homepage__subtitle">to start this app, give me your trainer name</p>
