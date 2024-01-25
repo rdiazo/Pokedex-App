@@ -5,6 +5,7 @@ import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 import './styles/PokedexPage.css'
 import { CounterPage } from "../components/PokedexPage/CounterPage"
+import { compose } from "@reduxjs/toolkit"
 
 const PokedexPage = () => {
 
@@ -14,9 +15,12 @@ const PokedexPage = () => {
   const trainerName = useSelector(states => states.trainer)
 
   const [limitPage, setlimitPage] = useState()
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=${limitPage}&offset=${1}`
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=${3}&offset=${limitPage}`
   const [pokemons, getPokemons, getTypePokemon] = useFecth(url)
-  
+ 
+useEffect(()=> {
+   
+},[])
 
   useEffect(() => {
     if (typeSelected === 'allPokemons') {
