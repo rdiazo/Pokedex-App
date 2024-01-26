@@ -4,11 +4,13 @@
     margin: 0.8em;
     background-color: whitesmoke;
 }
+
 .pokedexpage__img__container {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     position: relative;
 }
+
 .pokedexpage__img__name {
     width: 30%;
     position: absolute;
@@ -16,6 +18,7 @@
     left: 30%;
     transform: translate(-75%);
 }
+
 .pokedexpage__title {
     grid-column: 1 / 5;
     grid-row: 2 / 3;
@@ -24,6 +27,7 @@
     transform: translate(-15%);
     font-size: 1.8em;
 }
+
 .pokedexpage__form {
     grid-column: 1 / 5;
     grid-row: 3 / 4;
@@ -31,10 +35,12 @@
     flex-flow: row wrap;
     justify-content: left;
     margin-left: 8%;
- }
+}
+
 .pokedexpage__span__trainer {
     color: red;
 }
+
 .pokedexpage__input {
     margin-bottom: 1em;
     font-size: 1.4em;
@@ -42,6 +48,7 @@
     height: 50px;
     width: 350px;
 }
+
 .pokedexpage__button {
     font-size: 1.4em;
     border: none;
@@ -51,40 +58,43 @@
     background-color: red;
     color: whitesmoke;
 }
+
 .pokedex__card {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
+
 .pokedexpage__pagination {
     grid-column: 1 / 5;
     grid-row: 5 / 6;
     display: flex;
     justify-content: space-evenly;
-    border: 1px black solid;
+    border: 3px solid black;
+    border-radius: 100px;
     padding: 5px;
+    background-color: red;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 1.4em;
 }
+
 .btn__last {
-border: none;
-height: 50px;
-width: 100px;
-font-size: 1.4em;
-background-color: gray;
-color: whitesmoke;
+    border: none;
+    height: 50px;
+    width: 150px;
+    font-size: 1.4em;
+    background-color: gray;
+    color: whitesmoke;
+    border-radius: 15px;
 }
-.pokedexpage__pagination__begin {
-border: none;
-height: 50px;
-width: 100px;
-background-color: white;
-font-size: 1.4em;
-text-align: center;
-}
+
 .pokedexpage__pagination__next {
-border: none;
-height: 50px;
-width: 100px;
-background-color: gray;
-color: whitesmoke;
-font-size: 1.4em;
+    border: none;
+    height: 50px;
+    width: 150px;
+    background-color: gray;
+    border-radius: 15px;
+    color: whitesmoke;
+    font-size: 1.4em;
 }

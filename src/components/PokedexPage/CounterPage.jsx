@@ -1,4 +1,4 @@
-import { useState } from "react"
+/*import { useState } from "react"
 
 export const CounterPage = () => {
 
@@ -19,4 +19,4 @@ export const CounterPage = () => {
     <button onClick={handleAdd} className="pokedexpage__pagination__next">Next</button>
   </form>
   )
-}
+}*/

@@ -4,24 +4,17 @@ import useFecth from "../hooks/useFecth"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
 import './styles/PokedexPage.css'
-import { CounterPage } from "../components/PokedexPage/CounterPage"
-import { compose } from "@reduxjs/toolkit"
+import { current } from "@reduxjs/toolkit"
+
 
 const PokedexPage = () => {
 
   const [inputValue, setInputValue] = useState('')
   const [typeSelected, setTypeSelected] = useState('allPokemons')
-
   const trainerName = useSelector(states => states.trainer)
-
-  const [limitPage, setlimitPage] = useState()
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=${3}&offset=${limitPage}`
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=500&offset=1`
   const [pokemons, getPokemons, getTypePokemon] = useFecth(url)
  
-useEffect(()=> {
-   
-},[])
-
   useEffect(() => {
     if (typeSelected === 'allPokemons') {
       getPokemons()
@@ -38,7 +31,18 @@ useEffect(()=> {
     setInputValue(inputName.current.value.trim().toLowerCase())
   }
 
-  const cdFilter = (pokeInfo) => pokeInfo.name.toLowerCase().includes(inputValue)
+ //const cdFilter = (pokeInfo) => pokeInfo.name.toLowerCase().includes(inputValue)
+ //const cdFilter = (pokeInfo) => pokemons?.results.filter(pokeInfo => pokeInfo.name.includes(inputValue))
+ const pokeFiltered = pokemons?.results.filter(pokeInfo => pokeInfo.name.includes(inputValue))
+
+  const [currentPage, setCurrentPage] = useState(1)
+  const pokemonsPerPage = 12
+
+  const lastIndex = pokemonsPerPage * currentPage
+  const firstIndex = lastIndex - pokemonsPerPage
+
+  const pokemonsPaginated = pokemons?.results.length
+
 
   return (
 
@@ -56,15 +60,21 @@ useEffect(()=> {
       </form>
       <div className="pokedex__card">
         {
-          pokemons?.results.filter(cdFilter).map(pokeInfo => (
+          pokeFiltered?.slice(firstIndex, lastIndex, pokemonsPaginated).map(pokeInfo => (
             <PokeCard
               key={pokeInfo.url}
               url={pokeInfo.url}
             />
           ))
         }
-      </div>
-      <CounterPage />
+      </div >
+            <div className='pokedexpage__pagination'>
+              {
+                 <button className='btn__last' onClick={() => setCurrentPage (currentPage - 1)}>Previus</button>
+              }
+                 <p>{currentPage} de {Math.floor(pokemonsPaginated/12)}</p> 
+                <button className='pokedexpage__pagination__next' onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
+            </div>
     </div>
   )
 }
