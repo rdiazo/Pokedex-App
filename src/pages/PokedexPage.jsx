@@ -42,7 +42,7 @@ const PokedexPage = () => {
   const firstIndex = lastIndex - pokemonsPerPage
 
   const pokemonsPaginated = pokemons?.results.length
-
+  console.log(currentPage, Math.trunc(pokemonsPaginated/12))
 
   return (
 
@@ -53,7 +53,6 @@ const PokedexPage = () => {
       </div>
       <h2 className="pokedexpage__title"><span className="pokedexpage__span__trainer">Hi {trainerName}</span>, here you can find your favorite pokemon</h2>
       <form className="pokedexpage__form" onSubmit={handleSearch}>
-
         <input className="pokedexpage__input" ref={inputName} type="text" placeholder="Look for your favorite pokemon" />
         <button className="pokedexpage__button" >Search</button>
         <SelectType setTypeSelected={setTypeSelected} />
@@ -70,10 +69,10 @@ const PokedexPage = () => {
       </div >
             <div className='pokedexpage__pagination'>
               {
-                 <button className='btn__last' onClick={() => setCurrentPage (currentPage - 1)}>Previus</button>
+                 <button className='btn__last' onClick={() => currentPage === 1 ? 1 : setCurrentPage (currentPage - 1)}>Previus</button>
               }
                  <p>{currentPage} de {Math.floor(pokemonsPaginated/12)}</p> 
-                <button className='pokedexpage__pagination__next' onClick={() => setCurrentPage(currentPage + 1)}>Next</button>
+                <button className='pokedexpage__pagination__next' onClick={() => currentPage == Math.trunc(pokemonsPaginated/12) ? pokemonsPaginated/12 : setCurrentPage  (currentPage + 1)}>Next</button>
             </div>
     </div>
   )
